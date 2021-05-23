@@ -1,18 +1,92 @@
 .section3 {
-    margin-top: 137px;
+    box-sizing: border-box;
+    width: 375px;
+    height: 1876px; 
+    padding: 137px 24px 0 24px;
     @media #{$xl}{
-        margin-top: 387px;
+        padding: 387px 165px 0 165px;
+        width: 1440px;
+        height: 1170px;
     }
 
     display: flex;
     flex-direction: column;
+
+    &__header {
+        margin: 0 0 16px 0;
+        
+        @media #{$xl} {
+            margin: 0 0 36px 0;
+        }
+    }
+
+    &__paragraph {
+        width: 327px;
+        margin: 0;
+        @media #{$xl} {
+            width: 596px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 36px;
+    
+        @media #{$xl}{
+            flex-direction: row;
+            gap: 30px;
+            margin-top: 72px;
+        }
+    }
 }
 
-.cards {
+
+.card {
+    width: 327px;
+    height: 439px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
+    background: #FFFFFF;
+    border-radius: 8px;
 
     @media #{$xl}{
-        flex-direction: row;
+        width: 350px;
+    }
+
+    &__image {
+        width: 227px;
+        height: 173px;
+        background: url('../../assets/Card1.svg');
+        margin: 42px 0 81px 0;
+    }
+
+    &__header {
+        font-family: Rozha One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 117%;
+        
+        color: #131E07;
+
+        margin: 0;
+    }
+
+    &__paragraph {
+        font-family: Reem Kufi;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        
+        color: #131E07;
+
+        width: 185px;
+        margin: 16px 0 54px 0;
+        text-align: center;
     }
 }

@@ -15,44 +15,23 @@
     position: relative;
   
     &__header {
-        font-family: Rozha One;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 50px;
-        line-height: 117%;
-        /* or 58px */
-        
         font-feature-settings: 'haln' on;
-        
-        color: #131E07;
-
         margin: 64px 0 37px 0;
         width: 307px;
 
         @media #{$xl} {
             width: 839px;
-            font-size: 80px;
-            line-height: 117%;
             margin: 64px 0 40px 0;
             text-align: center;
         }
     }
 
     &__paragraph {     
-        font-family: Reem Kufi;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 30px;
-        
-        color: #131E07;
         margin: 0 0 162px 0;
         width: 307px;
 
         @media #{$xl} {
             width: 371px;
-            font-size: 24px;
-            line-height: 36px;
             margin: 0 0 447px 0;
             text-align: center;
         }

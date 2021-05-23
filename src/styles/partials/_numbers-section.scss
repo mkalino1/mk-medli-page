@@ -54,14 +54,8 @@
     }
 
     &__second-text {
-        font-family: Reem Kufi;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0em;
         text-align: center;
-        
+        color: #131E07;
         margin: 0;
         
         @media #{$xl}{

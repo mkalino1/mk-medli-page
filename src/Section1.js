@@ -24,8 +24,8 @@ export default function Section1() {
             <div className="hero">
                 <div className="hero__image"/>
                 <div className="hero__text_section">
-                    <p className="hero__header">Check y  ur well-being<span className="hero__ellipse"/></p>
-                    <p className="hero__paragraph">We’re sure that deciding to check on your health is a big step, even if it doesn’t bother in any way. </p>
+                    <p className="typography__header hero__header">Check y  ur well-being<span className="hero__ellipse"/></p>
+                    <p className="typography__paragraph hero__paragraph">We’re sure that deciding to check on your health is a big step, even if it doesn’t bother in any way. </p>
                     <div className="hero__button">
                         <p className="hero__button_text">Get started</p>
                     </div>
