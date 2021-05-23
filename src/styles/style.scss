@@ -1,10 +1,13 @@
+$xl: "only screen and (min-width: 1200px)";
+
 @import 'partials/top-section';
 @import 'partials/hero-section';
 @import 'partials/numbers-section';
 
+
 body {
     margin: 0;
-    min-width: 1440px;
+    @media #{$xl} {min-width: 1440px;}
 }
 
 .global_container {
@@ -15,8 +18,12 @@ body {
 }
 
 .section1 {
-    width: 1440px;
-    height: 1287px;
+    width: 375px;
+    height: 1404px;
+    @media #{$xl} {
+        width: 1440px;
+        height: 1287px;
+    }  
     margin: 0;
     background: lightcoral;
     display: flex;

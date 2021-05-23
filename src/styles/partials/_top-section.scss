@@ -1,9 +1,14 @@
 .top {
     background: lightpink;
-    margin: 27px 0 148px 0;
 
-    width: 1109px;
-    height: 55px;
+    width: 327px;
+    height: 47px;
+    margin: 35px 0 48px 0;
+    @media #{$xl} {
+        width: 1109px;
+        height: 55px;
+        margin: 27px 0 148px 0;
+    } 
 
     position: relative;
 
@@ -49,18 +54,23 @@
     }
 
     &__menu {
-        background: lightblue;
-        width: 644px;
-        height: 50px;
+        visibility: hidden;
+        @media #{$xl} {
+            visibility: visible;
+            background: lightblue;
+            width: 644px;
+            height: 50px;
+    
+            position: absolute;
+            top: 0;
+            right: 0;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        } 
 
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
     }
 
     &__menu-item {
@@ -86,12 +96,16 @@
     }
 
     &__dot {
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        left: 492px;
-        top: 43px;
-        background: url('../../assets/Dot.svg');
-        z-index: 2;       
+        visibility: hidden;
+        @media #{$xl} {
+            visibility: visible;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: 492px;
+            top: 43px;
+            background: url('../../assets/Dot.svg');
+            z-index: 2;       
+        }
     }
 }

@@ -22,6 +22,7 @@ export default function Section1() {
             </div>
 
             <div className="hero">
+                <div className="hero__image"/>
                 <div className="hero__text_section">
                     <p className="hero__header">Check y  ur well-being<span className="hero__ellipse"/></p>
                     <p className="hero__paragraph">We’re sure that deciding to check on your health is a big step, even if it doesn’t bother in any way. </p>
@@ -29,7 +30,6 @@ export default function Section1() {
                         <p className="hero__button_text">Get started</p>
                     </div>
                 </div>
-                <div className="hero__image"/>
             </div>
 
             <div className="numbers">
