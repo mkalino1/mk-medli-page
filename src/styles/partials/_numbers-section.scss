@@ -1,0 +1,44 @@
+.numbers {
+    width: 1005px;
+    background: lightseagreen;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__square {
+        height: 182px;
+        background: lightsalmon;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        white-space: pre-line;
+    }
+
+    &__first-text {
+        font-family: Rozha One;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 94px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+        color: #FABD20;
+
+        margin: 0 0 16px 0;
+    }
+
+    &__second-text {
+        font-family: Reem Kufi;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        margin: 0;
+    }
+}

@@ -1,0 +1,87 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 222px 0;
+
+    &__text_section {
+        display: flex;
+        flex-direction: column;
+        width: 443px;
+        margin-right: 18.02px;
+        background: lightseagreen;
+    }
+
+    &__header {
+        width: 100%;
+        height: 188px;
+        background: lightsalmon;
+        margin: 0 0 16px 0;
+
+        font-family: Rozha One;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 94px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        white-space: pre-wrap;
+
+        position: relative;
+    }
+
+    &__ellipse {
+        position: absolute;
+        height: 32px;
+        width: 43px;
+        left: 280px;
+        top: 40px;
+        background: url('../../assets/HeroEllipse.svg');
+    }
+
+    &__paragraph {
+        width: 100%;
+        height: 108px;
+        background: lightsalmon;
+        margin: 0 0 32px 0;
+
+        font-family: Reem Kufi;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;        
+    }
+
+    &__button {
+        width: 255px;
+        height: 70px;
+        background: #FABD20;
+        border-radius: 8px;
+        margin: 0;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button_text {
+
+        font-family: Reem Kufi;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;    
+    }
+
+    &__image {
+        width: 645.98px;
+        height: 385px;
+        background: url('../../assets/Hero.svg');
+        margin: 49px 0 0 0;
+    }
+}
