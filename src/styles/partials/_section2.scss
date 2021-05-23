@@ -1,0 +1,95 @@
+.section2 {
+    width: 375px;
+    height: 497px;
+    @media #{$xl} {
+        width: 1440px;
+        height: 811px;
+    }  
+
+    background: #FABD20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+
+    position: relative;
+  
+    &__header {
+        font-family: Rozha One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 117%;
+        /* or 58px */
+        
+        font-feature-settings: 'haln' on;
+        
+        color: #131E07;
+
+        margin: 64px 0 37px 0;
+        width: 307px;
+
+        @media #{$xl} {
+            width: 839px;
+            font-size: 80px;
+            line-height: 117%;
+            margin: 64px 0 40px 0;
+            text-align: center;
+        }
+    }
+
+    &__paragraph {     
+        font-family: Reem Kufi;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        
+        color: #131E07;
+        margin: 0 0 162px 0;
+        width: 307px;
+
+        @media #{$xl} {
+            width: 371px;
+            font-size: 24px;
+            line-height: 36px;
+            margin: 0 0 447px 0;
+            text-align: center;
+        }
+    }
+
+    &__video-rectangle {
+        position: absolute;
+
+        width: 327px;
+        height: 160px;
+        left: 24px;
+        top: 410px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background: url('../../assets/woman_light.jpg');
+        
+        @media #{$xl} {
+            width: 1240px;
+            height: 603px;
+            left: 100px;
+            top: 420px;
+            background: url('../../assets/woman_hd.jpg');
+        }
+    }
+
+    &__play-button {
+        display: block;
+        width: 78px;
+        height: 78px;
+        @media #{$xl} {
+            width: 130px;
+            height: 130px;
+        }
+        background: url('../../assets/Play.svg');
+        background-size: contain;
+    }
+}

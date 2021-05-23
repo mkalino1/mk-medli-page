@@ -3,6 +3,8 @@ $xl: "only screen and (min-width: 1200px)";
 @import 'partials/top-section';
 @import 'partials/hero-section';
 @import 'partials/numbers-section';
+@import 'partials/section2';
+@import 'partials/section3';
 
 
 body {
@@ -30,4 +32,3 @@ body {
     flex-direction: column;
     align-items: center;
 }
-

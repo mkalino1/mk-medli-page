@@ -1,0 +1,18 @@
+.section3 {
+    margin-top: 137px;
+    @media #{$xl}{
+        margin-top: 387px;
+    }
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$xl}{
+        flex-direction: row;
+    }
+}
