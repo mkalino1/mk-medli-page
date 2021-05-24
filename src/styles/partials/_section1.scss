@@ -1,0 +1,11 @@
+.section1 {
+    width: 375px;
+    @media #{$xl} {
+        width: 1440px;
+        height: 1287px;
+    }  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

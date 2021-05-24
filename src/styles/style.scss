@@ -1,11 +1,16 @@
 $xl: "only screen and (min-width: 1200px)";
 
 @import 'partials/typography';
+@import 'partials/logo';
 @import 'partials/top-section';
 @import 'partials/hero-section';
 @import 'partials/numbers-section';
+@import 'partials/section1';
 @import 'partials/section2';
 @import 'partials/section3';
+@import 'partials/footer';
+@import 'partials/links';
+@import 'partials/hamburger';
 
 
 body {
@@ -18,18 +23,4 @@ body {
     flex-direction: column;
     align-items: center;
     background: #FEF4E6;
-}
-
-.section1 {
-    width: 375px;
-    height: 1404px;
-    @media #{$xl} {
-        width: 1440px;
-        height: 1287px;
-    }  
-    margin: 0;
-    background: lightcoral;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

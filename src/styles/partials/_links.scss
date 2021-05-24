@@ -1,0 +1,20 @@
+.links-square {
+    display: flex;
+    flex-direction: column;
+    min-width: 132px;
+
+    &__label {
+        margin: 0 0 19px 0;
+        color: #7C8176;
+    }
+
+    &__link {
+        margin: 0;        
+        color: #E5E5E5;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.hamburger {
+    width: 30px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    left: 297px;
+    top: 15px;
+
+    @media #{$xl} {
+        visibility: hidden;
+    }
+
+    & span {
+        width: 30px;
+        height: 3px;        
+        background: #131E07;
+        border-radius: 90px;
+        transition: transform .2s , opacity .3s .2s;
+    }
+
+    &--active span{
+        transition: transform .2s  .3s, opacity .3s;
+        &:nth-child(1){
+          transform: translateY(6.75px) rotate(45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:nth-child(3){
+          transform: translateY(-6.75px) rotate(-45deg);
+        }
+      }
+}

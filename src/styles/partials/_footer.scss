@@ -1,0 +1,149 @@
+.footer {
+    width: 375px;
+    height: 938px;
+
+    box-sizing: border-box;
+    padding: 64px 24px 0 24px;
+
+    position: relative;
+
+    @media #{$xl} {
+        width: 1440px;
+        height: 469px;
+        padding: 89px 165px 0 165px;
+    }
+
+    background: #131E07;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__logo {
+        margin: 0 0 56px 0;
+        @media #{$xl} {
+            margin:0 0 51px 0;
+        }
+    }
+
+    &__logo-text {
+        color: #FFFFFF;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @media #{$xl} {
+            width: 1110px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__newsletter {
+        position: relative;
+        color: #7C8176;
+
+        @media #{$xl} {
+            order: 2;
+        }
+    }
+
+    &__newsletter-label {
+        margin: 0 0 16px 0;
+    }
+
+    &__newsletter-input {
+        margin: 0 0 16px 0;
+        padding: 16px 0 16px 15px;
+        width: 326px;
+
+        border: 1px solid #7C8176;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        color: #7C8176;
+        font-size: 20px;
+        line-height: 30px;
+
+        background: inherit;
+
+        @media #{$xl} {
+            width: 350px;
+            height: 50px;
+            font-size: 18px;
+            line-height: 27px;
+            padding: 11px 0 12px 16px;
+        }
+    }
+
+    &__newsletter-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 326px;
+        height: 62px;
+        background: #FABD20;
+        border-radius: 8px;
+
+        font-size: 20px;
+        line-height: 30px;
+        color: #131E07;
+
+        margin-bottom: 63px;
+        cursor: pointer;
+
+        @media #{$xl} {
+            position: absolute;
+            top: 51px;
+            right: 8px;
+            font-size: 18px;
+            line-height: 27px;
+
+            width: 90px;
+            height: 30px;
+            border-radius: 4px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        
+        @media #{$xl} {
+            flex-direction: row;
+            order: 1;
+            gap: 58px;
+        }
+    }
+
+    &__bar {
+        @media #{$xl} {
+            width: 1110px;
+            height: 1px;
+            
+            background: #FFFFFF;
+            opacity: 0.2;
+    
+            position: absolute;
+            bottom: 47px;
+        }
+    }
+
+    &__terms {
+        @media #{$xl} {
+            font-family: Reem Kufi;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 15px;            
+            color: #E5E5E5;
+            opacity: 0.5;
+    
+            position: absolute;
+            bottom: 16px;
+            right: 166px;
+        }
+    }
+}

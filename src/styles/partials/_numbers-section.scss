@@ -1,19 +1,19 @@
 .numbers {
-    background: lightseagreen;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
 
     @media #{$xl}{
         width: 1005px;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 0;
     }
 
     &__square {
         @media #{$xl}{
             height: 182px;           
         }
-        background: lightsalmon;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,6 +32,7 @@
             margin-bottom: 87px;
             @media #{$xl} {
                 margin-bottom: 0;
+                white-space: pre-line;
             }
         }
     }

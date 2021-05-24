@@ -60,8 +60,19 @@
     &__image {
         width: 227px;
         height: 173px;
-        background: url('../../assets/Card1.svg');
         margin: 42px 0 81px 0;
+
+        &--1{
+            background: url('../../assets/Card1.svg');
+        }
+
+        &--2{
+            background: url('../../assets/Card2.svg');
+        }
+
+        &--3{
+            background: url('../../assets/Card3.svg');
+        }
     }
 
     &__header {
@@ -85,7 +96,7 @@
         
         color: #131E07;
 
-        width: 185px;
+        white-space: pre-line;
         margin: 16px 0 54px 0;
         text-align: center;
     }

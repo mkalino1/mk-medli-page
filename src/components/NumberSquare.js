@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NumbersSquare( {firstText, secondText}) {
+export default function NumberSquare( {firstText, secondText}) {
     return (
         <div className="numbers__square">
             <p className="numbers__first-text">{firstText}</p>
